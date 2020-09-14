@@ -31,6 +31,9 @@ RUN   /etc/init.d/postgresql start &&\
     psql --command "CREATE USER docker WITH SUPERUSER PASSWORD 'docker';" &&\
     createdb -O docker tradedb &&  psql -d tradedb -f ./db-script.sql
 
-
 ENV PYTHONUNBUFFERED=TRUE
 ENV PYTHONDONTWRITEBYTECODE=TRUE
+
+WORKDIR /opt/trader
+
+CMD trader
