@@ -14,18 +14,12 @@ The project exposes container implementation for LiuAlgoTrader project. It's int
 
 make sure you have a locally installed docker (https://docs.docker.com/get-docker/).
 
-### Installation
+### Installation & Setup
 
-1. execute `docker pull amor71/liu-in-a-box`. 
-2. download the file 
- 
+1. Execute `docker pull amor71/liu-in-a-box`,
+2. Download the file https://github.com/amor71/trade_deploy/blob/master/liu-in-a-box/env.list to the folder in which you intend to run your strategies (eg. ~/my-liu/).
+3. Make you to have a valid `tradeplan.toml` file in the same directory, as well as set-up `LiuAlgoTrader` environment variables. For more details & examples see here https://liualgotrader.readthedocs.io/en/latest/Configuration.html .
 
-building docker:
-docker build . -t liu
+### Running your local `liu-in-a-box`
 
-prep:
-
-place the `tradeplan.toml` @ <local_folder>
-running:
-
-docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker@localhost/tradedb liu
+Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker@localhost/tradedb liu-in-a-box`
