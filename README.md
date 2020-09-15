@@ -10,9 +10,10 @@ The project exposes container implementation for LiuAlgoTrader project. It's int
 
 ## `liu-in-a-box` quick-start
 
-### prerequisites
+### Prerequisites
 
-make sure you have a locally installed docker (https://docs.docker.com/get-docker/).
+1. make sure you have a locally installed docker (https://docs.docker.com/get-docker/) ,
+2. Setup your PAPER or LIVE trading account w/ Alpaca Markets https://alpaca.markets/  .
 
 ### Installation & Setup
 
