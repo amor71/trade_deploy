@@ -1,4 +1,4 @@
-# Docker orchestration for `LiuAlgoTrader`
+# Docker setup for `LiuAlgoTrader`
 
 The project exposes container implementation for LiuAlgoTrader project. It's intended to kick-start strategy development, as well as exposing a full container/service oriented deployment for a full trading system.
  
