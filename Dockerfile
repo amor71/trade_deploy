@@ -36,4 +36,4 @@ ENV PYTHONDONTWRITEBYTECODE=TRUE
 
 WORKDIR /opt/trader
 
-CMD trader
+CMD  /etc/init.d/postgresql start && trader
