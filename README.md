@@ -1,4 +1,4 @@
-# Docker orchestration for `LiuAlgoTrader`
+# Docker setup for `LiuAlgoTrader`
 
 The project exposes container implementation for LiuAlgoTrader project. It's intended to kick-start strategy development, as well as exposing a full container/service oriented deployment for a full trading system.
  
@@ -10,9 +10,10 @@ The project exposes container implementation for LiuAlgoTrader project. It's int
 
 ## `liu-in-a-box` quick-start
 
-### prerequisites
+### Prerequisites
 
-make sure you have a locally installed docker (https://docs.docker.com/get-docker/).
+1. make sure you have a locally installed docker (https://docs.docker.com/get-docker/) ,
+2. Setup your PAPER or LIVE trading account w/ Alpaca Markets https://alpaca.markets/  .
 
 ### Installation & Setup
 
@@ -22,4 +23,4 @@ make sure you have a locally installed docker (https://docs.docker.com/get-docke
 
 ### Running your local `liu-in-a-box`
 
-Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker@localhost/tradedb liu-in-a-box`
+Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker:docker@localhost/tradedb liu-in-a-box`
