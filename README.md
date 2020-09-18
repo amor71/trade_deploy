@@ -41,5 +41,5 @@ Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=
 ### Recommanded step: validate access
 
 1. Execute `docker ps` and find the local port,
-2. Execute `\psql -h localhost -p 32771 -U docker tradedb` (password: `docker`)
+2. Execute `\psql -h localhost -p <local-port> -U docker tradedb` (password: `docker`)
 
