@@ -20,4 +20,6 @@ RUN pg_createcluster 12 main &&\
 
 WORKDIR /opt/db
 
-CMD pg_ctlcluster 12 main start
+RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/12/main/pg_hba.conf
+
+CMD ["/usr/lib/postgresql/12/bin/postgres", "-D", "/var/lib/postgresql/12/main", "-c", "config_file=/etc/postgresql/12/main/postgresql.conf"]
