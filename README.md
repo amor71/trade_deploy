@@ -23,7 +23,7 @@ The project exposes container implementation for LiuAlgoTrader project. It's int
 
 ### Running your local `liu-in-a-box`
 
-Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker:docker@localhost/tradedb liu-in-a-box`
+Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=postgresql://docker:docker@localhost/tradedb amor71/liu-in-a-box`
 
 ## `liu-db-in-a-box` quick-start 
 
@@ -36,7 +36,7 @@ Execute `docker run -v <local_folder>:/opt/trader --env-file env.list --env DSN=
 ### Installation & Setup
 
 1. Execute `docker pull amor71/liu-db-in-a-box`,
-2. Execute `docker run -P liu-db-in-a-box`.
+2. Execute `docker run -P amor71/liu-db-in-a-box`.
 
 ### Recommanded step: validate access
 
